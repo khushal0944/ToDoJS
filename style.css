@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    height : 100vh;
+    width : 100vw;
+    background-color: black;
+}
+
+.mainbox{
+    width : 500px;
+    height : fit-content;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.box{
+    display: grid;
+    place-content: center;
+    height: 100%;
+}
+
+input[type = text]{
+    background-color: rgb(200, 196, 196);
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    width: 100%;
+    /* height: 50px; */
+}
+.inputbox{
+    width: 90%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.taskslist{
+    height: fit-content;
+    width : 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* background-color: #4d4c4c; */
+}
+
+#Submit{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: orangered;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+    transition: color 100ms ease-in-out;
+}
+#Submit:hover{
+    background-color: #919191;
+    color : orangered;
+    border-radius: 20px;
+}
+#clearAll{
+    width: 20%;
+    margin: 5px auto;
+    background-color: orangered;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+    transition: color 100ms ease-in-out;
+}
+#clearAll:hover{
+    background-color: #919191;
+    color : orangered;
+    border-radius: 20px;
+}
+
+h1{
+    margin: 10px;
+}
+
+
+.margin{
+    margin: 10px;
+    font-size: 20px;
+}
+
+label{
+    margin-left: 10px;
+}
+
+.cross{
+    float: right;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    width: 30px;
+    transition: scale 0.2s ease;
+    /* transition */
+}
+
+.cross:hover{
+    scale : 1.6;
+}
